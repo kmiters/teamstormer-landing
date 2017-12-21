@@ -1,0 +1,25 @@
+section.howitworks{
+  p{
+    color:$lightgrey;
+    font-size: rem-calc(15px);
+    line-height: rem-calc(25px);
+    margin-top:20px;
+    @include breakpoint(medium down) {
+      max-width: rem-calc(300px);
+      margin:0 auto;
+      margin-top:rem-calc(30px);
+    }
+  }
+}
+
+.howitworks__element{
+  padding:rem-calc(35px);
+  img{
+    height:100px;
+    margin-bottom: rem-calc(40px);
+  }
+}
+
+.howitworks__container{
+  margin-top:rem-calc(60px);
+}

@@ -1,0 +1,16 @@
+section.cta{
+  background-color: $orange;
+
+
+  h1{
+    color:white;
+    font-size:rem-calc(60px);
+    font-weight:300;
+    @include breakpoint(medium down) {
+      font-size:rem-calc(40px);
+    }
+    span{
+      font-weight: 500;
+    }
+  }
+}

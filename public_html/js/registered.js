@@ -1,0 +1,1 @@
+$(document).ready(function(){var e=function(e,n){n||(n=window.location.href),e=e.replace(/[\[\]]/g,"\\$&");var a=new RegExp("[?&]"+e+"(=([^&#]*)|&|#|$)").exec(n);return a?a[2]?decodeURIComponent(a[2].replace(/\+/g," ")):"":null}("email");$(".place-email").text(e)});

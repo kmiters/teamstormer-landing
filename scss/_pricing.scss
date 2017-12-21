@@ -1,0 +1,68 @@
+section.pricing{
+	background-color:$bg-lightgrey;
+}
+
+.pricing__element{
+	margin-top:rem-calc(50px);
+	padding-left:rem-calc(25px);
+	padding-right:rem-calc(25px);
+	ul{
+		list-style: none;
+		margin-left:0;
+		margin-top:rem-calc(20px);
+		margin-bottom:rem-calc(30px);
+		li{
+			font-size:rem-calc(18px);
+			color:$grey;
+			line-height:rem-calc(32px);
+			text-align:center;
+			span{
+				font-weight:500;
+				color:$blue;
+			}
+		}
+	}
+}
+
+.pricing__content{
+	background-color:white;
+	padding:rem-calc(40px);
+}
+
+.pricing__label{
+	text-transform: uppercase;
+	font-size:rem-calc(20px);
+	color:$blue;
+	text-align: center;
+}
+
+.pricing__price{
+	font-size:rem-calc(80px);
+	line-height: rem-calc(80px);
+	color:$orange;
+	text-align:center;
+	font-weight: 300;
+	span{
+		font-size:rem-calc(40px);
+		vertical-align: super;
+	}
+}
+
+.pricing__month{
+	color:$lightgrey;
+	font-size:rem-calc(20px);
+	text-align:center;
+}
+
+.pricing__enterpise{
+	margin-top:rem-calc(30px);
+	font-size:rem-calc(20px);
+	font-weight:300;
+	color:$blue;
+	text-align:center;
+	a{
+		font-weight:400;
+		color:$orange;
+		text-decoration: underline;
+	}
+}

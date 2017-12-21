@@ -1,0 +1,103 @@
+body {
+    height: 100%;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+.admin__info {
+    background-color: magenta;
+    color: black;
+    position: fixed;
+    top: 0;
+    padding: 20px;
+}
+.button {
+    background-color: $orange;
+    height: 50px;
+    border-radius: rem-calc(4px);
+    text-transform: uppercase;
+    color: white;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 600;
+    margin-top: 14px;
+    margin-left: 10px;
+    @include breakpoint(small down) {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+.cta .button {
+    background-color: $blue;
+    color: white;
+}
+section {
+    padding-top: rem-calc(100px);
+    padding-bottom: rem-calc(100px);
+    @include breakpoint(small down) {
+        padding-left: rem-calc(20px);
+        padding-right: rem-calc(20px);
+        padding-top: rem-calc(50px);
+        padding-bottom: rem-calc(50px);
+    }
+
+        h2 {
+            font-size: rem-calc(60px);
+            color: $blue;
+            text-align: center;
+            font-weight: 300;
+        }
+        h3 {
+            color: $grey;
+            font-size: rem-calc(20px);
+            font-weight: 300;
+            text-align: center;
+        }
+        h4 {
+            color: $blue;
+            font-size: rem-calc(22px);
+            font-weight: 300;
+        }
+
+
+}
+input.main__input {
+    width: 360px;
+    border: none;
+    border-radius: rem-calc(4px);
+    height: 50px;
+    display: inline-block;
+    padding-left: 20px;
+    &::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+
+        color: $blue;
+    }
+    &::-moz-placeholder {
+        /* Firefox 19+ */
+
+        color: $blue;
+    }
+    &:-ms-input-placeholder {
+        /* IE 10+ */
+
+        color: $blue;
+    }
+    &:-moz-placeholder {
+        /* Firefox 18- */
+
+        color: $blue;
+    }
+    @include breakpoint(small down) {
+      width:100%;
+      margin-top:rem-calc(20px);
+    }
+}
+
+.basic-shadow{
+  box-shadow: -6px 0px 40px 0px rgba(16, 19, 84, 0.05);
+}
+
+.box-shadow{
+    box-shadow: 0px 6px 40px 0px rgba(16,19,84,0.05);
+}

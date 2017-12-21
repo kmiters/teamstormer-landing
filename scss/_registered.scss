@@ -1,0 +1,21 @@
+body.registered{
+  background-color: $bg-lightgrey;
+  h1{
+    font-size: rem-calc(40px);
+    font-family: "Roboto";
+    text-align: center;
+    font-weight:100;
+    margin-bottom:rem-calc(35px);
+  }
+}
+
+.msg-logo{
+  margin-top:rem-calc(50px);
+  margin-bottom:rem-calc(50px);
+  width:200px;
+}
+
+.place-email{
+  padding:10px;
+  border-radius:4px;
+}

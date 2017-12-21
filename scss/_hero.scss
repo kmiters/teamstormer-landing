@@ -1,0 +1,72 @@
+section.hero{
+  padding:0;
+  background-color: $blue;
+  background-image: url('../img/bg_hero.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  padding-bottom: rem-calc(140px);
+  @include breakpoint(small down) {
+    padding-bottom: rem-calc(70px);
+    padding-left:20px;
+    padding-right:20px;
+  }
+}
+
+.topBar{
+  padding-top:25px;
+  padding-left:20px;
+  padding-right:20px;
+  margin-bottom: rem-calc(70px);
+  @include breakpoint(small) {
+    padding-bottom: rem-calc(70px);
+  }
+  @include breakpoint(medium down) {
+    margin-bottom: rem-calc(70px);
+  }
+  @include breakpoint(small down) {
+    margin-bottom: rem-calc(40px);
+  }
+}
+.topBar__logo{
+  img{
+    height:30px;
+    margin-right:10px;
+  }
+  span{
+    font-weight:500;
+  }
+  font-size:rem-calc(20px);
+  color:white;
+}
+
+.hero__header{
+  h1{
+    color:white;
+    font-size:rem-calc(60px);
+    font-weight:200;
+    line-height: rem-calc(74px);
+    @include breakpoint(medium down) {
+      font-size:rem-calc(55px);
+      line-height: rem-calc(65px);
+    }
+    .hero__header__first{
+      display: block;
+      border:none;
+      @include breakpoint(medium down) {
+        display:inline;
+      }
+    }
+    .hero__header__second{
+      font-weight:500;
+      border-bottom:4px solid $orange;
+      white-space: nowrap;
+      @include breakpoint(small down) {
+        white-space: normal;
+      }
+    }
+  }
+}
+
+.hero__inputs{
+  margin-top:rem-calc(30px);
+}
